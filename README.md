@@ -35,8 +35,6 @@ Now here's the cool part:
 To Do
 -----
 
-* Add the structure necessary to make this easily installable as a package
-* I do the pass-through to redis in an incredibly unsafe way, find a safer way!
 * Think of a better name for this library
 
 
