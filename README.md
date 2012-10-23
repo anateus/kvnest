@@ -3,7 +3,7 @@ kvnest
 
 Objected Oriented Keys for Redis ... in Python.
 
-This is a Python re-implementation of the Ruby [Nest](https://github.com/soveran/nest) library.
+This is a Python re-implementation of the Ruby [Nest](https://github.com/soveran/nest) library. One of the authors, [Michel Martens](https://github.com/soveran), hyped me to it at [RedisConf 2012](http://redisconf.com/)
 
 Usage:
 ------
