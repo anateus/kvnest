@@ -10,12 +10,12 @@ Usage:
 
 This is the standard behavior:
 
-    >>> k = KVNest('foo')
-    'foo'
-    >>> k['bar']
-    'foo:bar'
-    >>> k['bar']['baz']
-    'foo:bar:baz'
+    >>> k = KVNest('user')
+    'user'
+    >>> k['1']
+    'user:1'
+    >>> k['1']['friends']
+    'user:1:friends'
 
 But it also provides partially applied methods on redis. That is:
 
