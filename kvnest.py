@@ -8,18 +8,16 @@ class KVNest(str):
 			del kwargs['connection']
 
 		obj = super(KVNest,cls).__new__(cls,*args,**kwargs)
-		if connection:
+		if 'connection' in locals():
 			obj._redis = connection
 
 		return obj
 		
-
 	def __getitem__(self,key):
 		return KVNest(':'.join((self,key)))
 
 	def __getattribute__(self,name):
-		"""Transparently returns partially applied versions of redis methods"""
-
+		"""Transparently returns partially applied versions of redis methods."""
 		
 		# if we're not looking for the redis connection and we do have a connection, look to see if this exists within redis
 		if name!='_redis' and hasattr(self,'_redis') and hasattr(self._redis, name): 
