@@ -3,10 +3,10 @@ kvnest
 
 Objected Oriented Keys for Redis ... in Python.
 
-This is a Python re-implementation of the Ruby [Nest](https://github.com/soveran/nest) library. One of the authors, [Michel Martens](https://github.com/soveran), hyped me to it at [RedisConf 2012](http://redisconf.com/)
+This is a Python re-implementation of the Ruby [Nest](https://github.com/soveran/nest) library. One of the authors, [Michel Martens](https://github.com/soveran), hyped me to it his [RedisConf 2012](http://redisconf.com/) talk.
 
-Usage:
-------
+Usage
+-----
 
 This is the standard behavior:
 
@@ -31,6 +31,13 @@ Now here's the cool part:
 
     >>> k.get()
     'bar'
+
+To Do
+-----
+
+* Add the structure necessary to make this easily installable as a package
+* I do the pass-through to redis in an incredibly unsafe way, find a safer way!
+* Think of a better name for this library
 
 
 License
